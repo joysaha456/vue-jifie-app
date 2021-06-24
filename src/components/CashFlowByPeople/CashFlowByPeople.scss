@@ -1,0 +1,40 @@
+.CashFlowByPeople {
+    --max-height : 510px;
+    .CashFlowByPeople-list {
+        .CashFlowByPeople-list-link {
+            text-decoration: none;
+            display: block;
+            --grid-first: 38px;
+            display: grid;
+            grid-template-columns: var(--grid-first) 1fr;
+            grid-column-gap: 15px;
+
+            img.people-img {
+                width: var(--grid-first);
+                height: var(--grid-first);
+                border-radius: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .CashFlowByPeople-info {
+                .name {
+                    font-size: 14px;
+                    line-height: calc(100% + 5px);
+                    font-weight: 400;
+                    color: var(--text-clr-gray-dark);
+                }
+
+                .balance {
+                    font-size: 16px;
+                    line-height: calc(100% + 5px);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        +.CashFlowByPeople-list {
+            margin-top: 5px;
+        }
+    }
+}
